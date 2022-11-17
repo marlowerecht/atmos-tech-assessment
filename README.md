@@ -23,7 +23,7 @@ $ yarn dev
 ```
 
 ## Your Tasks
-*Within two hours*, please complete as many as possible of the following tasks. They aren't in any particular order, so feel free to tackle them in any order you like. They vary in difficulty, so don't feel like you have to do them all.
+*Within two hours*, please complete as many as possible of the following tasks. They aren't in any particular order, so feel free to tackle them in any order you like. They vary in difficulty, so don't feel like you have to do them all. (Please check off the specific tasks you choose to complete.)
 
 - [ ] Animate the progress bar, without adding a new dependency.
 - [ ] Debounce the `save()` function in the App component to avoid unnecessary re-renders and API calls.
@@ -37,29 +37,6 @@ $ yarn dev
 - **Testing**: We're looking for tests that cover the core functionality of the app. We're not looking for 100% coverage, but rather a few tests that demonstrate your ability to write tests.
 - **Creativity**: We're looking for creative solutions to the problems. We're not looking for the most obvious solution, but rather one that demonstrates your ability to think outside the box. (This should not come at the expense of code quality, though.)
 - **Communication**: We're looking for clear, concise communication. We're not looking for a novel, but rather a few sentences that clearly explain your thought process and the decisions you made.
-
-## Available Scripts
-
-### `yarn dev`
-Runs the app in the development mode.
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.
-
-### `yarn test`
-Launches the test runner in the interactive watch mode.
-
-### `yarn build`
-Builds the app for production to the `dist` folder.
-
-### `yarn preview`
-Serves the production build locally.
-
-Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
-
-### `yarn lint`
-Runs eslint. (You can also run `yarn lint --fix` to automatically fix some errors. If you're using VSCode, this already happens on save.)
 
 ## Submission
 Please submit your solution as a link to a private GitHub repo (preferred) or a zip file. If you have any questions, please feel free to reach back out to us. We're happy to help!
