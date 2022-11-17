@@ -33,7 +33,7 @@ $ yarn dev
 - [ ] Add a `PercentageField` that allows the user to enter a percentage value. Validate that the value is between 0 and 100 with Formik (and Yup, if you'd like).
 
 ## Criteria
-- **Code Quality**: We're looking for clean, readable code that's easy to understand. We're not looking for the most concise solution, but rather one that's easy to understand and maintain. Solutions shouldn't cause any eslint errors or warnings. (An ignore is ok here and there, but should be avoided except where it would comprise the solution or another factor here.)
+- **Code Quality**: We're looking for clean, readable code that's easy to understand. We're not looking for the most concise solution, but rather one that's easy to understand and maintain. Solutions shouldn't cause any eslint to raise any issues.
 - **Testing**: We're looking for tests that cover the core functionality of the app. We're not looking for 100% coverage, but rather a few tests that demonstrate your ability to write tests.
 - **Creativity**: We're looking for creative solutions to the problems. We're not looking for the most obvious solution, but rather one that demonstrates your ability to think outside the box. (This should not come at the expense of code quality, though.)
 - **Communication**: We're looking for clear, concise communication. We're not looking for a novel, but rather a few sentences that clearly explain your thought process and the decisions you made.
