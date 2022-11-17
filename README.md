@@ -16,14 +16,14 @@ We've provided a basic React app that you can use to get started. It's a simple 
 
 ## Setup
 ```bash
-$ git clone ...
-$ cd question-sequence-poc
+$ git clone https://github.com/atmosimpact/take-home-assessment.git atmos-assessment
+$ cd atmos-assessment
 $ yarn
 $ yarn dev
 ```
 
 ## Tasks
-*Within two hours*, please complete as many as possible of the following tasks. They aren't in any particular order, so feel free to tackle them in any order you like. They vary in difficulty, so don't feel like you have to do them all. (Please check off the specific tasks you choose to complete.)
+*Within two hours*, please complete as many as possible of the following tasks. They aren't in any particular order, so feel free to tackle them in any order you like. They vary in difficulty, so don't feel like you have to do them all. *Please check off the specific tasks you choose to complete prior to submitting.*
 
 - [ ] Animate the progress bar, without adding a new dependency.
 - [ ] Debounce the `save()` function in the App component to avoid unnecessary re-renders and API calls.
