@@ -22,7 +22,7 @@ $ yarn
 $ yarn dev
 ```
 
-## Your Tasks
+## Tasks
 *Within two hours*, please complete as many as possible of the following tasks. They aren't in any particular order, so feel free to tackle them in any order you like. They vary in difficulty, so don't feel like you have to do them all. (Please check off the specific tasks you choose to complete.)
 
 - [ ] Animate the progress bar, without adding a new dependency.
@@ -32,7 +32,7 @@ $ yarn dev
 - [ ] The test coverage for this project is pretty low. Add tests to improve it. (Bonus: fix any bugs you find!)
 - [ ] Add a `PercentageField` that allows the user to enter a percentage value. Validate that the value is between 0 and 100 with Formik (and Yup, if you'd like).
 
-## What We're Looking For
+## Criteria
 - **Code Quality**: We're looking for clean, readable code that's easy to understand. We're not looking for the most concise solution, but rather one that's easy to understand and maintain. Solutions shouldn't cause any eslint errors or warnings. (An ignore is ok here and there, but should be avoided except where it would comprise the solution or another factor here.)
 - **Testing**: We're looking for tests that cover the core functionality of the app. We're not looking for 100% coverage, but rather a few tests that demonstrate your ability to write tests.
 - **Creativity**: We're looking for creative solutions to the problems. We're not looking for the most obvious solution, but rather one that demonstrates your ability to think outside the box. (This should not come at the expense of code quality, though.)
