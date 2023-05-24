@@ -48,4 +48,4 @@ If you'd like, use the `.eslintrc.js` file to configure your editor to use the s
 
 ## 🚀 Submission
 
-Fork this repo and submit a link to a private repo with your solution. (Keeping the existing commit history earns bonus points!) If you have any questions, don't hesitate to contact us at [wade@atmos.ai](mailto:wade@atmos.ai). We're here to help!
+Fork this repo and reply to your assignment email with a link to a private repo containing your solution. (Keeping the existing commit history earns bonus points!) If you have any questions, don't hesitate to contact us at [wade@atmos.ai](mailto:wade@atmos.ai). We're here to help!
