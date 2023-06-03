@@ -11,7 +11,7 @@ model Question {
     id Int @id @default(autoincrement())
     title String
     description String
-    modals Modals[]
+    modals String?
     type String
     choices String[]
     answer String
@@ -31,9 +31,9 @@ model Response {
     updatedAt DateTime @updatedAt
 }
 
-model Modals {
-    id Int @id @default(autoincrement())
-    description String[]
-    question Question @relation(fields: [questionId], references: [id])
-    questionId Int
-}
+// model Modals {
+//     id Int @id @default(autoincrement())
+//     description String[]
+//     question Question @relation(fields: [questionId], references: [id])
+//     questionId Int
+// }

@@ -8,7 +8,7 @@
     },
     "type": "text",
     "answer": "Washington, DC",
-    "difficulty": "easy"
+    "difficulty": 1
   },
   {
     "id": 2,
@@ -16,7 +16,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint ex odio et consectetur ullam placeat ea in alias corporis quam, facilis fugiat ipsum, adipisci veritatis, quas natus ipsam nam repellat aliquid expedita. Accusamus non provident perspiciatis nostrum!",
     "type": "number",
     "answer": "50",
-    "difficulty": "medium"
+    "difficulty": 2
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint ex odio et consectetur ullam placeat ea in alias corporis quam, facilis fugiat ipsum, adipisci veritatis, quas natus ipsam nam repellat aliquid expedita. Accusamus non provident perspiciatis nostrum!",
     "type": "boolean",
     "answer": "true",
-    "difficulty": "medium"
+    "difficulty": 2
   },
   {
     "id": 4,
@@ -38,6 +38,6 @@
       "Financial"
     ],
     "answer": "Judicial",
-    "difficulty": "hard"
+    "difficulty": 3
   }
 ]
