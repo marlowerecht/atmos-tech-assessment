@@ -10,7 +10,6 @@ function TextField({ name, initialValue, onChange }: TextFieldProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
     onChange(e)
-    console.log()
   }
 
   return (
