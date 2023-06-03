@@ -32,8 +32,23 @@ function App() {
     }
   }
 
+  type SomeFunction = () => void;
+  type Timer = ReturnType<typeof setTimeout>;
+  const [ timer, setTimer ] = useState<Timer>();
+
+  // debounce function
+    // fn will only run if the delay time is reached
+  const debounce =<Func extends SomeFunction>(fn: Func, delay: number) => {
+    return () => {
+      clearTimeout(timer);
+      setTimer(setTimeout(() => fn(), delay));
+    }
+  };
+
+  const debounceSaveFunc = debounce(save, 1000)
+
   useEffect(() => {
-    save()
+    debounceSaveFunc()
   }, [data])
 
   const renderStatus = () => {
