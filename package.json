@@ -10,9 +10,11 @@
     "lint": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
+    "formik": "^2.4.1",
     "nanoid": "^4.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.19.0",

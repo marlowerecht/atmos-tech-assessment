@@ -86,7 +86,7 @@ function App() {
   const question: QuestionType = questions[index]
 
   // ********* THIS CURRENTLY DOES NOT WORK ********
-  
+
   // changes index based on if question was answered correctly if not
   const onNextClick = () => {
 

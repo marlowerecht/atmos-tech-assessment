@@ -39,5 +39,14 @@
     ],
     "answer": "Judicial",
     "difficulty": 3
+  },
+  {
+    "id": 5,
+    "title": "What percentage of states are not considered part of the continental United States?",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint ex odio et consectetur ullam placeat ea in alias corporis quam, facilis fugiat ipsum, adipisci veritatis, quas natus ipsam nam repellat aliquid expedita. Accusamus non provident perspiciatis nostrum!",
+    "type": "percent",
+    "answer": "4%",
+    "difficulty": 3
   }
+
 ]

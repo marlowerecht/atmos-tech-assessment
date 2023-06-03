@@ -27,3 +27,8 @@ export interface FieldProps {
 export const FieldDefaultProps = {
   initialValue: '',
 }
+
+export interface MyFormValues {
+  name: string;
+  value: string;
+}

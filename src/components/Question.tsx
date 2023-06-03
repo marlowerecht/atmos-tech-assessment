@@ -5,6 +5,7 @@ import TextField from './fields/TextField'
 import ChoiceField from './fields/ChoiceField'
 import { QuestionProps } from '../types'
 import BooleanField from './fields/BooleanField'
+import PercentageField from './fields/PercentageField'
 
 function Question({
   question, onChange,
@@ -25,6 +26,8 @@ function Question({
             choices={question.choices as string[]}
           />
         )
+      case 'percent':
+        return <PercentageField name={question.id.toString()} onChange={onChange} />
       default:
         return null
     }
