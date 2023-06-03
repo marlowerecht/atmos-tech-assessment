@@ -9,7 +9,7 @@ function ProgressBar({ current, max }: ProgressBarProps) {
 
   return (
     <div className="absolute inset-x-0 top-0 h-3">
-      <div className="h-full bg-primary-600" style={{ width: valueAsPercentage }} />
+      <div className="h-full bg-primary-600 transition-all ease-out duration-1000 relative" style={{ width: valueAsPercentage }} />
     </div>
   )
 }

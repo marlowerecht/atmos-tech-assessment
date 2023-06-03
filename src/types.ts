@@ -9,6 +9,8 @@ export type Question = {
     [key: string]: string;
   };
   choices?: string[];
+  answer: string;
+  difficulty: number
 };
 
 export interface QuestionProps {
@@ -24,4 +26,9 @@ export interface FieldProps {
 
 export const FieldDefaultProps = {
   initialValue: '',
+}
+
+export interface MyFormValues {
+  name: string;
+  value: string;
 }

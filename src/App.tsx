@@ -8,8 +8,15 @@ import { toTitleCase } from './utils'
 import { Question as QuestionType } from './types'
 
 function App() {
+
+  // gives data object the index of the question asked and the user's response
+  interface Data {
+    questionIndex: string,
+    response: string
+  }
+
   const [index, setIndex] = useState(0)
-  const [data, setData] = useState({})
+  const [data, setData] = useState<Data>({} as Data)
   const [status, setStatus] = useState({ state: '', lastSaved: new Date() })
   const [modal, setModal] = useState<string|null>(null)
 
@@ -32,8 +39,25 @@ function App() {
     }
   }
 
+  type SomeFunction = () => void;
+  type Timer = ReturnType<typeof setTimeout>;
+  const [ timer, setTimer ] = useState<Timer>();
+
+  // debounce function
+    // fn will only run if the delay time is reached
+  const debounce =<Func extends SomeFunction>(fn: Func, delay: number) => {
+    return () => {
+      clearTimeout(timer);
+      setTimer(setTimeout(() => fn(), delay));
+    }
+  };
+
+  // debouncing save function so it only runs after one second without timer being reset
+  const debounceSaveFunc = debounce(save, 1000)
+
+  // save func will run once data hasn't changed in one sec
   useEffect(() => {
-    save()
+    debounceSaveFunc()
   }, [data])
 
   const renderStatus = () => {
@@ -53,10 +77,39 @@ function App() {
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setData({ ...data, [e.target.name]: e.target.value })
+    // index of question asked is ID of question
+      // name is string of index passed from Question to field components
+    // response is user's input value
+    setData({ ...data, questionIndex: e.target.name, response: e.target.value })
   }
 
   const question: QuestionType = questions[index]
+
+  // ********* THIS CURRENTLY DOES NOT WORK ********
+
+  // changes index based on if question was answered correctly if not
+  const onNextClick = () => {
+
+    // if the answer matches the response and the question is not the last in the array
+    if (question.answer === data.response && index < questions.length - 1) {
+      // then create array of questions with harder difficulties
+      const harderQuestions = questions.filter((q) =>  q.difficulty > question.difficulty)
+      // then set the index to the id of the first question in that array
+      setIndex(harderQuestions[0].id)  
+    }
+
+    // if the answer does not match the response but the question is not the first in the array
+    else if (question.answer !== data.response && index > 0) {
+      //then create array of questions with easier difficulties
+      const easierQuestions = questions.filter((q) => q.difficulty < question.difficulty)
+      // then set the index to the id of the first question in that array
+      setIndex(easierQuestions[0].id)
+    }
+
+    else {
+      setIndex(index + 1)
+    }
+  }
 
   return (
     <>
@@ -64,6 +117,7 @@ function App() {
         <div className="relative flex h-[500px] flex-col overflow-hidden rounded-lg bg-gray-100 p-7 pt-20">
           <ProgressBar current={index + 1} max={questions.length} />
           <Question
+            // passes quesiton of current index (begins at zero)
             question={question}
             onChange={handleChange}
           />
@@ -80,7 +134,8 @@ function App() {
             <span className="flex-1 text-right">{ renderStatus() }</span>
             <Button>Save and Exit</Button>
             <Button
-              onClick={() => { setIndex(index + 1) }}
+              // onClick={() => { setIndex(index + 1) }}
+              onClick={onNextClick}
               disabled={index >= questions.length - 1}
             >
               Next &rarr;
